@@ -1,0 +1,23 @@
+#logo {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    margin: 20px 40px 20px 40px;
+    background-color: #bfdec3;
+    color: #444444;
+}
+
+#info {
+    padding-top: 20px;
+    width: 25%;
+    text-align: left;
+    margin:auto;
+}
+
+section {
+    padding-top: 20px; 
+    text-align: left;
+    margin:auto;
+}

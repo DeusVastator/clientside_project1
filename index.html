@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Marnie's Cakes and Sweets
+    </title>
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+   <div id="logo"><img src="photos/logo-2.png"></div>
+<h1>Marnie’s Cakes and Sweets – Wedding Cake Pricing Sheet
+</h1>
+<h2 id="info">Cake Base Price: $100.00<br>
+Materials and Prep: $75.00<br>
+Packing and Packaging Cost: $60.00<br>
+Handling and Delivery: $40.00<br>
+Taxes: 5.5% State Sales Tax<br>
+</h2>
+    
+<form name="price_sheet" action="js/form.js" onsubmit="return validateForm()">
+    <hr>
+    <section id="questionOne">
+        
+        <p class="question"><strong>1.	What size or serving amount would you like?</strong><br>
+        <i>Choosing two or more from the list below will result in a tiered cake.</i>
+         </p>
+        
+        <br>
+        
+        <input class="question1" type="checkbox" name="s1"  value="30">
+        <label>
+            6” – 12 servings (+$30.00)
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s2"  value="35">
+        <label>
+            8” – 20 servings (+$35.00)
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s3"  value="40">
+        <label>
+            10” – 30 servings (+$40.00)
+
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s4"  value="45">
+        <label>
+           12” – 45 servings (+$45.00)
+
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s5"  value="50">
+        <label>
+           14” – 62 servings (+$50.00)
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s6"  value="60">
+        <label>
+          16” – 85 servings (+$60.00)
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s7"  value="65">
+        <label>
+           18” – 125 servings (+$65.00)
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s8"  value="70">
+        <label>
+           20” – 144 servings (+$70.00)
+        </label>
+        <br>
+        <input class="question1" type="checkbox" name="s9"  value="80">
+        <label>
+           22” – 175 servings (+$80.00)
+        </label>
+        
+    </section>
+    <hr>
+    
+    <section id="questionTwo">
+    <p class="question"><strong>2.	What cake types would you like?
+</strong><br>
+        <i>Choose the main cake type below. If you would like different types for your different tiers, please let us know in the additional information field.
+</i>
+         </p>
+        <br>
+        <input type="checkbox" name="c1"  value="0.05">
+        <label>Vanilla (+5%)</label>
+        <br>
+        <input type="checkbox" name="c2"  value="0.05">
+        <label>Chocolate (+5%)</label>
+        <br>
+        <input type="checkbox" name="c3"  value="0.05">
+        <label>Strawberry (+5%)</label>
+        <br>
+        <input type="checkbox" name="c4"  value="0.07">
+        <label>Butterscotch (+7%)</label>
+        <br>
+        <input type="checkbox" name="c5"  value="0.10">
+        <label>Marbled (+10%)</label>
+        <br>
+        <input type="checkbox" name="c6"  value="0.10">
+        <label>Red Velvet (+10%)</label>
+        <br>
+        <input type="checkbox" name="c7"  value="0.12">
+        <label>Carrot (+12%)</label>
+        <br>
+    </section>
+    <hr>
+    <section id="questionThree">
+    <p class="question"><strong>3. What icings would you like?</strong>
+    </p>
+        <br>
+        <input type="checkbox" name="i1"  value="0.02">
+        <label>Buttercream (+2%)</label>
+        <br>
+        <input type="checkbox" name="i2"  value="0.02">
+        <label>Glossy Glaze (+2%)</label>
+        <br>
+        <input type="checkbox" name="i3"  value="0.05">
+        <label>Cream Cheese (+5%)</label>
+        <br>
+        <input type="checkbox" name="i4"  value="0.05">
+        <label>Fudge (+5%)</label>
+        <br>
+        <input type="checkbox" name="i5"  value="0.05">
+        <label>Meringue (+5%)</label>
+        <br>
+        <input type="checkbox" name="i6"  value="0.05">
+        <label>Ganache (+5%)</label>
+        <br>
+        <input type="checkbox" name="i7"  value="0.07">
+        <label>Rolled Fondant (+7%)</label>
+        <br>
+    </section>
+    <hr>
+    <section id="questionFour">
+    <p class="question"><strong>4. What fillings would you like?
+    </strong>
+    </p>
+        <br>
+        <input type="checkbox" name="f1"  value="0.03">
+        <label>Vanilla Custard (+3%)</label>
+        <br>
+        <input type="checkbox" name="f2"  value="0.03">
+        <label>Pastry Cream (+3%)</label>
+        <br>
+        <input type="checkbox" name="f3"  value="0.06">
+        <label>White Chocolate Filling (+6%)</label>
+        <br>
+        <input type="checkbox" name="f4"  value="0.06">
+        <label>Chocolate Mousse (+6%)
+        </label>
+        <br>
+        <input type="checkbox" name="f5"  value="0.06">
+        <label>English Lemon Curd (+6%)</label>
+        <br>
+        <input type="checkbox" name="f6"  value="0.06">
+        <label>Chocolate Ganache (+6%)</label>
+        <br>
+        <input type="checkbox" name="f7"  value="0.08">
+        <label>Fresh Berries (+8%)</label>   
+        <br>
+        <input type="checkbox" name="f8"  value="0.07">
+        <label>Raspberry Mousse (+7%)</label>
+        <br>
+        <input type="checkbox" name="f9"  value="0.08">
+        <label>Belgium Chocolate (+8%)</label>
+        <br>
+        <input type="checkbox" name="f10"  value="0.10">
+        <label>Cannoli (+10%)</label>   
+    </section>
+    <hr>
+    <section>
+    <p class="question"><strong>5. What topper would you like?</strong>
+    </p>
+        <br>
+        <input type="radio" name="t1"  value="50">
+        <label>Classic Bride and Groom (+50.00)</label>
+        <br>
+        <input type="radio" name="t1"  value="70">
+        <label>Sparklers (+70.00)</label>
+        <br>
+        <input type="radio" name="t1"  value="120">
+        <label>Edible Small Centerpiece (+120.00)</label>
+        <br>
+        <input type="radio" name="t1"  value="200">
+        <label>Edible Large Centerpiece (+200.00)</label>
+    </section>
+    <hr>
+    <section id="questionSix">
+    <p class="question"><strong>6. What decorations would you like?</strong>
+    </p>
+        <br>
+        <input type="checkbox" name="d1"  value="0.05">
+        <label>Piped Icing (+5%)</label>
+        <br>
+        <input type="checkbox" name="d2"  value="0.10">
+        <label>Caramel Crumble (+10%)</label>
+        <br>
+        <input type="checkbox" name="d3"  value="0.10">
+        <label>Chocolate Crumble (+10%)</label>
+        <br>
+        <input type="checkbox" name="d4"  value="0.15">
+        <label>Edible Pearls (+15%)
+        </label>
+        <br>
+        <input type="checkbox" name="d5"  value="0.15">
+        <label>Mirror Glaze (+15%)</label>
+        <br>
+        <input type="checkbox" name="d6"  value="0.15">
+        <label>Layered Buttercreams (+15%)</label>
+        <br>
+        <input type="checkbox" name="d7"  value="0.15">
+        <label>Buttercream Folding (+15%)</label>   
+        <br>
+        <input type="checkbox" name="d8"  value="0.15">
+        <label>Floral Lace (+15%)</label>
+        <br>
+        <input type="checkbox" name="d9"  value="0.20">
+        <label>Fruit Decor (+20%)</label>
+        <br>
+        <input type="checkbox" name="d10"  value="0.20">
+        <label>Piped Florals (+20%)</label>
+        <br>
+        <input type="checkbox" name="d11"  value="0.25">
+        <label>Gumpaste Florals (+25%)</label>
+    </section>
+    <hr>
+    <section>
+    <p class="question"><strong>7. Would you like your cake pre-cut?</strong>
+    </p>
+        <br>
+        <input type="radio" name="p1"  value="20">
+        <label>Yes (+$20.00)</label>
+        <br>
+        <input type="radio" name="p1"  value="0">
+        <label>No (+$0.00)</label>
+        
+    </section>
+    <hr>
+    <section>
+    <p class="question"><strong>8. Please let us know any additional specifications for your cake.</strong>
+    </p>
+        <br>
+        <textarea class="specs"></textarea>
+    
+    
+    
+    
+    
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <br>
+    
+    
+   <p id="result"></p>  
+    
+ <br>   
+<input type="button" value="Submit" onclick="success()">  
+</form>
+    
+    
+    
+    
+ <script src="js/form.js"></script>   
+</body>
+
+</html>
